@@ -8,7 +8,7 @@ setInterval(() => {
     var currentTime = moment();
 
     // Then we must instruct this function how to format/present currentTime
-    var formatCurrentTime = currentTime.format("dddd, D MMMM YYYY");
+    var formatCurrentTime = currentTime.format("dddd, D MMMM YYYY,  h:mm:ss a");
     
     // Then we need to insruct the function to modify the text of the current day section to actually display the day/time
     currentDay.textContent = formatCurrentTime;
