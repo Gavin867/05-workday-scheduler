@@ -74,3 +74,9 @@ body {
 .visualizer {
   background-color: gray;
 }
+
+/* Center the save icon */
+.center {
+  display:inline-block;
+  vertical-align: middle;
+}
