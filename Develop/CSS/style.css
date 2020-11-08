@@ -57,6 +57,12 @@ body {
   color: white;
 }
 
+
+/* Gray background place holder to help with grid layout */
+.visualizer {
+  background-color:#F8F8F8;
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,14 +71,10 @@ body {
   color: white;
 }
 
-.saveBtn i:hover {
+/* Removing the <i> reference from this CSS class enables the effect when the mouse is over any portion of the button, not just the icon */
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-
-/* Gray background place holder to help with grid layout */
-.visualizer {
-  background-color: gray;
 }
 
 /* "Cortana, center these effing icons!" */
