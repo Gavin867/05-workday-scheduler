@@ -16,4 +16,7 @@ setInterval(() => {
     // Finally at the tail end of this function, included in the setInterval wrapper, we specficy the interval that this task will be performed. In this case, it's once every 1000 milliseconds
 }, 1000);
 
+// var present = new Date().getHours();
+
+// for (i = 9)
 
