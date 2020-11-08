@@ -1,5 +1,5 @@
 // First we create a display variable that is tied to the currentDay element of the jumbotron
-var timeDisplayEl = document.getElementById("currentDay");
+var timeDisplayEl = document.getElementById("dateTime");
 
 // To dynamically display the current day, date and/or time we must create a function tied to moment.js which is performed at a recoccuring interval to reference, update and display day, date, and/or time
 setInterval(() => {
@@ -11,11 +11,9 @@ setInterval(() => {
     var formatCurrentTime = currentTime.format("dddd, D MMMM YYYY,  h:mm:ss a");
     
     // Then we need to insruct the function to modify the text of the current day section to actually display the day/time
-    currentDay.textContent = formatCurrentTime;
+    dateTime.textContent = formatCurrentTime;
 
     // Finally at the tail end of this function, included in the setInterval wrapper, we specficy the interval that this task will be performed. In this case, it's once every 1000 milliseconds
 }, 1000);
-
-
 
 

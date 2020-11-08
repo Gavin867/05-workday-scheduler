@@ -57,12 +57,6 @@ body {
   color: white;
 }
 
-
-/* Gray background place holder to help with grid layout */
-.visualizer {
-  background-color:#F8F8F8;
-}
-
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
