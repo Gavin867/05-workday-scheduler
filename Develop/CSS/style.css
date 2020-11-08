@@ -75,8 +75,9 @@ body {
   background-color: gray;
 }
 
-/* Center the save icon */
-.center {
-  display:inline-block;
-  vertical-align: middle;
+/* "Cortana, center these effing icons!" */
+i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
