@@ -71,9 +71,3 @@ body {
   transition: all .3s ease-in-out;
 }
 
-/* "Cortana, center these effing icons!" */
-i {
-  position: absolute;
-  top: 50%;
-  transtextarea: translate(-50%, -50%);
-}
