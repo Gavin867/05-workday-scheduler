@@ -23,23 +23,31 @@ function applyPastPresentFuture(currentTime=moment()){
     // Create a variable which grabs the current hour
     var currentHour = currentTime.hour();
     
-    // Create a for loop to loop through the textarea elements
-    for (i = 8; i<=18; i++){
+    // Create a for loop to loop through the textarea elements. Because we start at userInput8 and move through 16, we will make i-8 and have our completion parameters be when i <= 18
+    for (i = 8; i <= 18; i++){
 
-        if (currentHour>i){
+        // If our current hour is less than i it means the time block is in the past and we apply the .past css
+        if (currentHour > i) {
             
-            $("#userInput"+i).addClass("past");
+            // $ is the jQuery getElementByID equivalent, after grabbing the element we use .addClass adds to apply .past 
+            $("#userInput" + i).addClass("past");
         } 
         
-        else if (currentHour ==i){
+        // If our current hour is equal to i it means the time block is in the present and we will want to add .present to it
+        else if (currentHour == i) {
             
+            // $ is the jQuery getElementByID equivalent, after grabbing the element we use .addClass adds to apply .preset
             $("#userInput" + i).addClass("present");
         }
         
-        else if (currentHour<i){
+        // If our current hour is equal to i it means the time block is in the present and we will want to add .present to it
+        else if (currentHour < i) {
             
+            // $ is the jQuery getElementByID equivalent, after grabbing the element we use .addClass adds to apply .future
             $("#userInput" + i).addClass("future");
         }
     }
 }
+
+// After defining the function we must call it to apply it
 applyPastPresentFuture();
