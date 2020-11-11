@@ -47,25 +47,33 @@ function applyPastPresentFuture(currentTime=moment()){
             $("#userInput" + i).addClass("future");
         }
 
+        // As the function loops it 
         var printText = localStorage.getItem("Textarea-" + i);
         $("#userInput" + i).text(printText);
     }
 }
 
-// After defining the function we must call it to run it
+// After defining the function we must call it to run it 
 applyPastPresentFuture();
 
+// Event listener for button clicks within the main container in relation to the storage function
 $(".container").on("click", "button", storage);
 
+// Create function to store the data in the text area
 function storage(event) {
 
+    // Prevent the page from reloading
     event.preventDefault();
 
+    // Save the data-hour value
     var SaveButtonClick = $(this).data("hour");
 
+    // Query the information in the text area element with .prev
     var getInformation = $(this).prev().val();
 
+    // Save the the hour value and textarea information into storage
     localStorage.setItem("Textarea-" + SaveButtonClick, getInformation);
 
+    // Call the storage event
     storage(event);
 };
