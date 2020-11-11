@@ -46,8 +46,26 @@ function applyPastPresentFuture(currentTime=moment()){
             // $ is the jQuery getElementByID equivalent, after grabbing the element we use .addClass adds to apply .future
             $("#userInput" + i).addClass("future");
         }
+
+        var printText = localStorage.getItem("Textarea-" + i);
+        $("#userInput" + i).text(printText);
     }
 }
 
-// After defining the function we must call it to apply it
+// After defining the function we must call it to run it
 applyPastPresentFuture();
+
+$(".container").on("click", "button", storage);
+
+function storage(event) {
+
+    event.preventDefault();
+
+    var SaveButtonClick = $(this).data("hour");
+
+    var getInformation = $(this).prev().val();
+
+    localStorage.setIem("Textarea-" + SaveButtonClick, getInformation);
+
+    storage(event);
+};
