@@ -65,7 +65,7 @@ function storage(event) {
 
     var getInformation = $(this).prev().val();
 
-    localStorage.setIem("Textarea-" + SaveButtonClick, getInformation);
+    localStorage.setItem("Textarea-" + SaveButtonClick, getInformation);
 
     storage(event);
 };
