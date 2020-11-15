@@ -24,7 +24,7 @@ function applyPastPresentFuture(currentTime=moment()){
     var currentHour = currentTime.hour();
     
     // Create a for loop to loop through the textarea elements. Because we start at userInput8 and move through 16, we will make i-8 and have our completion parameters be when i <= 18
-    for (i = 8; i <= 18; i++){
+    for (i = 8; i <= 18; i++) {
 
         // If our current hour is less than i it means the time block is in the past and we apply the .past css
         if (currentHour > i) {
@@ -73,7 +73,4 @@ function storage(event) {
 
     // Save the the hour value and textarea information into storage
     localStorage.setItem("Textarea-" + SaveButtonClick, getInformation);
-
-    // Call the storage event
-    storage(event);
 };
