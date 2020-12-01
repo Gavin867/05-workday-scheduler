@@ -14,5 +14,5 @@
 
 ## Project Location
 
-* [GitHub Repo](https://github.com/Gavin867/workday-scheduler)
-* [Published Site](https://gavin867.github.io/workday-scheduler/)
+* [GitHub Repo](https://github.com/Gavin867/05-workday-scheduler)
+* [Published Site](https://gavin867.github.io/05-workday-scheduler/)
